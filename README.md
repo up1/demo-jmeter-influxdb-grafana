@@ -1,6 +1,6 @@
 # Workshop Performance Testing with Apache JMeter (Distributed testing)
 * Apache JMeter
-* InfluxDB
+* InfluxDB 2
 * Grafana
 * Docker compose
 
