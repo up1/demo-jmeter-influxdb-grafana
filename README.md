@@ -31,6 +31,10 @@ Access to Grafana eith url = http://localhost:3000
 
 4. Run test plan with Apache JMeter
 * [Influx DB v2.0 listener plugin for Apache JMeter](https://github.com/mderevyankoaqa/jmeter-influxdb2-listener-plugin)
+* Config backend listener with InfluxDB 2
 ```
 $jmeter -n -t google.jmx -l ./log.jtl -j ./result.log
 ```
+
+
+![alt text](https://github.com/up1/demo-jmeter-influxdb-grafana/blob/main/jmeter-backend.png?raw=true)
