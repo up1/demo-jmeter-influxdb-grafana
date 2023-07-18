@@ -34,6 +34,10 @@ Access to Grafana eith url = http://localhost:3000
 * Config backend listener with InfluxDB 2
 ```
 $jmeter -n -t google.jmx -l ./log.jtl -j ./result.log
+
+or 
+
+$docker compose up jmeter --remove-orphans
 ```
 
 
