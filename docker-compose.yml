@@ -1,9 +1,9 @@
 services:
   influxdb:
-    image: influxdb
+    image: influxdb:2
     ports:
      - "8086:8086"
-     - 25826:25826/udp
+     - "25826:25826/udp"
     env_file:
       - './influxdb/influx2.env'
     networks:
