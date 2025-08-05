@@ -6,17 +6,21 @@
 
 ## Step to run
 
-1. Build image
+1. Build image of Apache JMeter
 ```
-$docker compose build
+$docker compose build jmeter
 ```
 
-2. Start Influxdb (Database to store test result from Apache JMeter)
+2. Start [Influxdb 2](https://docs.influxdata.com/influxdb/v2/install/) (Database to store test result from Apache JMeter)
 ```
 $docker compose up -d influxdb
 $docker compose ps
 $docker compose logs --follow
 ```
+
+Access to InfluxDB2 = http://localhost:8086/
+* user=user
+* password=password
 
 3. Start Grafana (Dashboard of test result)
 ```
@@ -25,7 +29,7 @@ $docker compose ps
 $docker compose logs --follow
 ```
 
-Access to Grafana eith url = http://localhost:3000
+Access to Grafana dashboard = http://localhost:3000
 * user=admin
 * password=admin
 
