@@ -34,8 +34,14 @@ Access to Grafana dashboard = http://localhost:3000
 * password=admin
 
 4. Run test plan with Apache JMeter
+* [JMeter Plugin Manager](https://jmeter-plugins.org/wiki/PluginsManager/)
+  * Custom Thread Group
 * [Influx DB v2.0 listener plugin for Apache JMeter](https://github.com/mderevyankoaqa/jmeter-influxdb2-listener-plugin)
 * Config backend listener with InfluxDB 2
+  * influxDBURL=http://localhost:8086
+  * influxDBToken=5up3r-S3cr3t-auth-t0k3n
+  * influxDBOrganization=influxdata-org
+  * influxDBBucket=jmeter_results
 ```
 $jmeter -n -t google.jmx -l ./log.jtl -j ./result.log
 
